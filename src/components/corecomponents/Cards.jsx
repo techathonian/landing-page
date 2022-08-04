@@ -5,20 +5,21 @@ import styled from 'styled-components';
 
 const CoreCards = styled.div`
     width: 308px;
-    /* min-width: 308px; */
+    
     border-radius: 8px;
     padding:24px 24px 48px 24px;
     background-color: #ffffff;
+  
     box-shadow:  0px 1px 15px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
     text-align: center;
     margin:20px auto;
 
-    @media only screen and (max-width:600px){
+    /* @media only screen and (max-width:600px){
         margin:10px 0;
         width: 100%;
-    }
-    /* for 820 max screen */
+    } */
+    
     @media only screen and (min-width:600px){
         width:100%;
       margin:10px 0;
@@ -36,12 +37,12 @@ const CoreCards = styled.div`
     }
  
 `;
-const Image = styled.img`
+const CoreCardImage = styled.img`
    background-color:#F0E1DC ;
    padding: 13.18px;
    border-radius: 82.3864px;
 `;
-const Title = styled.h3`
+const CoreCardTitle = styled.h3`
 /* Designers used Lato font which is not ours */
  font-family: techathonFont;
  font-weight: 700;
@@ -51,7 +52,7 @@ const Title = styled.h3`
  margin-top:19.77px;
  margin-bottom:23.27px;
 `;
-const Description = styled.p`
+const CardDescription = styled.p`
 /* Designers used Lato font which is not ours */
     font-family: techathonFont;
     font-weight:400;
@@ -66,9 +67,9 @@ export const Cards = ({title, description, image}) => {
   return (
    
       <CoreCards>
-            <Image src={image}></Image>
-            <Title>{title}</Title>
-            <Description>{description}</Description>   
+            <CoreCardImage src={image}></CoreCardImage>
+            <CoreCardTitle>{title}</CoreCardTitle>
+            <CardDescription>{description}</CardDescription>   
       </CoreCards>
 
    
