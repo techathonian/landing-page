@@ -1,0 +1,45 @@
+import React from 'react';
+import styled from 'styled-components';
+
+const Container =styled.div`
+ background-color:#171C54;
+ 
+
+`;
+const Wrapper = styled.div`
+    margin: 0 20px;
+    padding:1px 0 20px;
+   
+`;
+const Heading = styled.h2`
+font-weight: 400;
+font-size: 24px;
+line-height:45px;
+font-family: techathonFont;
+color:#fff;
+text-align: center;
+margin-top: 21px;
+`;
+
+const Text = styled.p`
+  color: #fff;
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 4px;
+  font-family: techathonFont;
+`;
+
+
+export const FutureEventSwipper = ({event, text}) => {
+    
+  return (
+    <Container >
+      <Wrapper>
+        <Heading>{event}</Heading>
+        <Text>{text}</Text>
+        </Wrapper>
+    </Container>
+  )
+}
