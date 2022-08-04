@@ -7,9 +7,18 @@ import opensource from '../../assets/opensource.png';
 import { Button } from './Button';
 
 
+const CoreContainer =styled.div`
+width:100%;
+padding-bottom:32px;
 
-const Wrapper = styled.div`
+
+
+   
+`;
+
+const CoreWrapper = styled.div`
   margin: 0 20px;
+ 
 
 
   @media only screen and (min-width: 600px){
@@ -23,17 +32,10 @@ const Wrapper = styled.div`
   }
 `;
 
-const Container =styled.div`
-/* width:100%; */
-/* max-width: 100%; */
-box-sizing: border-box;
 
 
-   
-`;
 
-
-const Section =styled.section`
+const CoreSection =styled.section`
   display: flex;
   flex-direction: column;
   
@@ -43,24 +45,21 @@ const Section =styled.section`
   }
   @media only screen and (min-width: 768px){
       display: flex;
-     
       flex-direction: row;
       justify-content: space-evenly;
      
   }
   @media only screen and (min-width:1024px){
-    display: flex;
-     
+      display: flex;
       flex-direction: row;
       justify-content: space-evenly;
     }
 
   
 `;
-const Heading =styled.h2`
+const CoreHeading =styled.h2`
     font-weight:500 ;
     font-size:24px;
-    align-items: center;
     color: #1d1d1d;
     text-align: center;
     line-height: 36px;
@@ -70,8 +69,6 @@ const Heading =styled.h2`
 
 }
 @media only screen and (min-width: 768px){
-  
-  
    font-size:22px;
    text-align:center;
    
@@ -94,19 +91,18 @@ margin:auto;
   }
     
 `;
-const Text= styled.p`
+const CoreText= styled.p`
     font-weight: 400;
     font-size:16px;
     line-height: 27px;
     text-align: center;
-    align-items: center;
     color: #1d1d1d;
     margin-bottom: 24px;
     font-family: techathonFont;
     width:90%;
     margin: auto;
 
-    @media only screen and (min-width: 600px){
+@media only screen and (min-width: 600px){
       width:90.3%;
       margin: auto;
 }
@@ -144,15 +140,16 @@ color: #1D1D1D;
 export const Core = () => {
   return (
    
-      <Container>
-        <Wrapper>
-        <Heading>
+      <CoreContainer>
+        <CoreWrapper>
+        <CoreHeading>
             Core components of the community
-        </Heading>
-        <Text>
+        </CoreHeading>
+        <CoreText>
         We have commited tech enthusiats on borad to guide your through your desired tech career. We cover the following services, and your other requirements as well.
-        </Text>
-        <Section>
+        </CoreText>
+    {/* Section start */}
+        <CoreSection> 
        <Cards
             image={rocket}
             title="Kickstarter"
@@ -168,10 +165,11 @@ export const Core = () => {
             title="Open-source"
             description='We give back to the tech community by contributing to open-source projects which in-turn has potential benefit to everyone who has access to them. '
        />
-       </Section>
+    {/* Section start */}
+       </CoreSection> 
         <Button BtnText={'View Code of Conduct'}/>
-       </Wrapper>
-    </Container>
+       </CoreWrapper>
+    </CoreContainer>
       
  
   )
