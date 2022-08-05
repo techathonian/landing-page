@@ -7,24 +7,25 @@ import { Button } from '../button/Button';
 
 
 const Container = styled.div`
-    background-image: url();
+    background-image: url('../../assets/bgpartern.svg');
     background-position: center;
     width:100%;
-    background-color: pink;
+    
   
 `;
 
 const Wrapper = styled.div`
         margin:0 20px;
-        padding:221px 0;
+        padding:96px 0;
         display: flex;
         flex-direction: column;
         align-items:flex-start;
         gap:39px;
-        background-color: yellow;
+ 
+        
 
     @media only screen and (min-width:1440px){
-            margin:0 128px;
+        margin:0 128px;
         padding:221px 0;
         display: flex;
         align-items:flex-start;
@@ -32,8 +33,8 @@ const Wrapper = styled.div`
         }
 `;
 const HeroContent = styled.div`
-
-
+    order:2;
+   
     @media only screen and (min-width:1440px){
         margin-top: 12px;
         width: 595px;
@@ -42,6 +43,7 @@ const HeroContent = styled.div`
 `;
 const HeroHeading = styled.h1`
 width: 300px;
+margin: 0 auto ;
 font-family: techathonFont;
 font-style: normal;
 font-weight: 500;
@@ -68,28 +70,37 @@ width: 508px;
 `;
 
 const HeroVectorArc = styled.img`
+    display: inline-block;
+    margin-top: 2px;
+    width: 117px;
+  
+    margin-left: 140px;
+    
+
 
 
 
 @media only screen and (min-width:1440px){
     display: inline-block;
-margin-top: 8px;
-margin-left: 190px;
+    margin-top: 8px;
+    margin-left: 190px;
 /* background-color: red; */
 }
 
 `;
 const HeroText = styled.p`
-width: 314px;
+        width: 314px;
+        margin-top:10px;
+        margin-left: 10px;
         font-family: techathonFont;
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
         line-height: 24px;
-        display: flex;
-        align-items: center;
         text-align: center;
         color: #32376F;
+       
+
     @media only screen and (min-width:1440px){
     margin-top: 17px;
     font-family: techathonFont;
@@ -104,8 +115,10 @@ width: 314px;
 `;
 const HeroIllustration = styled.div`
     
-        width:290px;
-
+        width:335px;
+        order: 1;
+       
+        margin:0 auto ;
     
         img{
             width:100%;

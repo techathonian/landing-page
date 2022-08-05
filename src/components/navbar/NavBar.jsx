@@ -36,8 +36,7 @@ const NavContainer = styled.div`
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: aliceblue;
-
+     
 
      @media only screen and (min-width:1440px){
         margin:0 128px;
