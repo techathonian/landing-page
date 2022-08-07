@@ -7,7 +7,7 @@ import { Footer } from './components/footer/Footer';
 import { AboutPage } from './pages/aboutpage/AboutPage';
 import { NavBar } from './components/navbar/NavBar';
 import { HeroSection } from './components/herosection/HeroSection';
-
+import { Meet } from './components/aboutus/Meet';
 
 
 const Container =styled.div`
@@ -25,6 +25,7 @@ function App() {
       <Core />
       <EventSection />
      <About />
+    <Meet />
      <Partner />
      <Footer />
   

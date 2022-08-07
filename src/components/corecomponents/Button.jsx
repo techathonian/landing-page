@@ -10,7 +10,7 @@ width:380px; */
 `;
 const ButtonElem = styled.button`
 
-padding: 10px 54px 10px 20px;
+padding: 10px 30px 10px 30px;
 /* width: 247px; */
 display:block;
 background: #5C2CC7;
@@ -23,7 +23,7 @@ span{
 font-family: techathonFont;
 font-style: normal;
 font-weight: 600;
-font-size: 18px;
+font-size: 14px;
 line-height: 35px;
 color: #FFFFFF;
 }

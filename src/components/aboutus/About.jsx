@@ -6,7 +6,7 @@ import aos from 'aos';
 import { Button } from './Button';
 
 const Container = styled.div`
-    
+    padding: 0 0 36px;
 `;
 
 const Wrapper = styled.div`
@@ -165,25 +165,75 @@ return(
 
            <Text>{textLine3}</Text><br></br>     
             <Text>{textLine4}</Text><br></br>  
-            <Button BtnText={'Join the waitlist for Techathon 2.0'}/> 
+            <Button BtnText={'Become a mentor'}/>
+            {/* <Button BtnText={'Join the waitlist for Techathon 2.0'}/>  */}
        </FlexContainerDeskLeft>
        <FlexContainerDeskRight>
            <Image src={desktopImage}/>
        </FlexContainerDeskRight>
        {/* mobile content */}
        <FlexContainer >
-            <Heading >{title}</Heading>  
-            <Image src={image} />
+            <Heading 
+            
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            
+            >{title}</Heading>  
+            <Image 
+            
+            
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="40"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            
+            src={image} />
              
        </FlexContainer>
        <FlexContainer>
-       <Text>{textLine1}</Text><br></br>
+       <Text
 
-        <Text>{textLine2}</Text><br></br>
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="40"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+       >{textLine1}</Text><br></br>
 
-        <Text>{textLine3}</Text><br></br>     
-        <Text>{textLine4}</Text>  
+        <Text
+        
+        data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="40"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+        >{textLine2}</Text><br></br>
+
+        <Text
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="40"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        
+        >{textLine3}</Text><br></br>     
+        <Text
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="40"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        
+        
+        >{textLine4}</Text>  
+        <Button BtnText={'Become a mentor'}/>
        </FlexContainer>
+       
+     
    </Wrapper>
 </Container>
 )

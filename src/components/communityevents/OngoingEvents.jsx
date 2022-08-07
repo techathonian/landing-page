@@ -9,6 +9,7 @@ import { NonCodingTrackIcon } from '../../store/data';
 
 const UnorderdList = styled.ul`
  list-style-image: url(https://firebasestorage.googleapis.com/v0/b/tecthathonlandingpage.appspot.com/o/assets%2Fbg%2Fdot1.png?alt=media&token=98512fa0-240e-4414-ac58-c0785005fb12);
+
   text-align: center;
   font-family: techathonFont;
   margin-top:20px;
@@ -104,10 +105,26 @@ const renderNonCodingTrack = NonCodingTrack.map((noncoding, key)=>{
   return (
     <Container>
         <Wrapper>
-            <Heading>
+            <Heading            
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            >
+
+
                 On-going events
             </Heading>
-            <Text>
+            <Text 
+            
+              
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            >
             Techathon 1.0 is currently on going with both coding and non-coding courses being offered We have over 2000+ students who registered for free. The  courses being offered includes; 
             </Text>
           <FlexContainer>

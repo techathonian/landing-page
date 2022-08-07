@@ -37,8 +37,23 @@ export const FutureEventSwipper = ({event, text}) => {
   return (
     <Container >
       <Wrapper>
-        <Heading>{event}</Heading>
-        <Text>{text}</Text>
+        <Heading 
+        
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        
+        >{event}</Heading>
+        <Text
+          
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-delay="40"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >{text}</Text>
         </Wrapper>
     </Container>
   )
