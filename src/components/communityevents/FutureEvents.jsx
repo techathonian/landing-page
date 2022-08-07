@@ -17,6 +17,7 @@ export const FutureEvents = () => {
   return (
     <div >
       <FutureEventSwipper event={renderEvents} />
+   
     </div>
   )
 }

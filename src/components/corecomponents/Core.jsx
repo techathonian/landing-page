@@ -5,11 +5,16 @@ import rocket from '../../assets/ion_rocket.png';
 import el_group from '../../assets/el_group.png';
 import opensource from '../../assets/opensource.png';
 import { Button } from './Button';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 
 
 const CoreContainer =styled.div`
 width:100%;
 padding-bottom:32px;
+padding-top:36px;
 
 
 
@@ -142,25 +147,44 @@ export const Core = () => {
    
       <CoreContainer>
         <CoreWrapper>
-        <CoreHeading>
+        <CoreHeading 
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="40"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        >
             Core components of the community
         </CoreHeading>
-        <CoreText>
+        <CoreText 
+         data-aos="fade-up"
+         data-aos-offset="200"
+         data-aos-delay="50"
+         data-aos-duration="1000"
+         data-aos-easing="ease-in-out"
+        
+        >
         We have commited tech enthusiats on borad to guide your through your desired tech career. We cover the following services, and your other requirements as well.
         </CoreText>
     {/* Section start */}
         <CoreSection> 
        <Cards
+
+           
             image={rocket}
             title="Kickstarter"
             description='No prior skills needed. In transitioning, you will be tutored from the very basics to the required standard of knowledge & skill needed.'
        />
        <Cards
+
+            
             image={el_group}
             title="Mentorship"
             description='Continous learning is guaranteed as our commited mentors are ready to take you step by step and set you on the right track in your chosen career journey.'
        />
        <Cards
+
+          
             image={opensource}
             title="Open-source"
             description='We give back to the tech community by contributing to open-source projects which in-turn has potential benefit to everyone who has access to them. '

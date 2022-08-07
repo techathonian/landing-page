@@ -2,21 +2,20 @@ import React from 'react';
 import styled from 'styled-components';
 import HeroImage from '../../assets/heroimagedesktop.png'
 import Heroarc from '../../assets/herovector.svg'
-import { Button } from '../button/Button';
+import { Button } from './Button';
+// import arrow from '../../assets/arrow.svg';
+import bgpartern from '../../assets/bgpartern.svg'
 // import Bgpartern from '../../assets/bgpartern.svg'
 
 
-const Container = styled.div`
-    background-image: url('../../assets/bgpartern.svg');
-    background-position: center;
-    width:100%;
-    
-  
+const Container =styled.div`
+  background-image: url(https://firebasestorage.googleapis.com/v0/b/tecthathonlandingpage.appspot.com/o/assets%2Fbg%2FCircuit%20background%20dark.png?alt=media&token=42b2b1de-e65a-4c88-b2f7-d53086aa51dc);
+
 `;
 
 const Wrapper = styled.div`
         margin:0 20px;
-        padding:96px 0;
+        padding:96px 0 0;
         display: flex;
         flex-direction: column;
         align-items:flex-start;
@@ -131,6 +130,16 @@ const HeroIllustration = styled.div`
 `;
 
 
+// const Arrow = styled.img`
+     
+// height: 10.5018949508667px;
+// width: 12.00133991241455px;
+// left: 6px;
+// top: 6.7490234375px;
+// border-radius: 0px;
+// margin-left: 20px;
+
+// `;
 
 export const HeroSection = () => {
   return (
@@ -145,9 +154,10 @@ export const HeroSection = () => {
                 while engaging in a systematic approach to imbibe
                 you with the necessary knowledge and skills.
                 </HeroText>
-                    {/* <Button BtnText={"Join the waitlist for Techathon 2.0"} 
+                    <Button BtnText={"Join the waitlist for Techathon 2.0"} 
                     
-                    /> */}
+                    />
+                    {/* <button style={{display:'block', padding:'10px 54px 10px 20px',borderRadius:'10px', backgroundColor:'#5C2CC7', margin:' 0 auto', border:'none' }}>Join the waitlist for Techathon 2.0 <Arrow src={arrow} /></button> */}
             </HeroContent>
             <HeroIllustration>
                 <img src={HeroImage} />  

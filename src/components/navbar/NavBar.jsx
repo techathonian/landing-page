@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import styled from 'styled-components';
 import { Logo } from '../../store/data';
+import menuicon from './/menuicon.svg';
+import menuiconClose from '../../assets/menuiconClose.svg'
 
 
 const Header = styled.header`
@@ -143,13 +145,21 @@ const ListItem = styled.li`
     }
 `;
 
-const HambugerMenu = styled.button`
+const HambugerMenu = styled.div`
+        padding:7px 3.5px;
+        width: 40px;
+        height: 40px;
         
 
         @media only screen and (min-width:768px){
             display: none;
         }
        
+
+`;
+const MenuIcon = styled.img`
+width:100%;
+height:100%;
 
 `;
 
@@ -165,7 +175,7 @@ export const NavBar = () => {
                 </LogoContainer>
                 <ListContainer  id={`${toggleNav ? "hidden" : ""}`}>{/* List conatiner start */}
                 <HambugerMenu  onClick={()=>setToggleNav(!toggleNav)}>
-                    Menu
+                < MenuIcon src={menuiconClose} />
                 </HambugerMenu>
                     <UnorderdList>
                         <ListItem><a href='#component'>Home</a></ListItem>
@@ -176,7 +186,7 @@ export const NavBar = () => {
                     </UnorderdList>
                 </ListContainer > {/* List conatiner start */}
                 <HambugerMenu  onClick={()=>setToggleNav(!toggleNav)}>
-                    Menu
+                    < MenuIcon src={menuicon} />
                 </HambugerMenu>
                
                 </NavContainer>

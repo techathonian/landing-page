@@ -132,3 +132,4 @@ export const Mentors  =   [
 //         linkein:''
 //     }
 // ]
+// read ipo fillings from cover to cover, build a website from scratch which include my analysis of the business and four ideas for  new features.

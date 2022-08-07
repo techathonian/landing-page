@@ -66,7 +66,14 @@ const CardDescription = styled.p`
 export const Cards = ({title, description, image}) => {
   return (
    
-      <CoreCards>
+      <CoreCards 
+        
+      data-aos="fade-up"
+      data-aos-offset="200"
+      data-aos-delay="50"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+      >
             <CoreCardImage src={image}></CoreCardImage>
             <CoreCardTitle>{title}</CoreCardTitle>
             <CardDescription>{description}</CardDescription>   
