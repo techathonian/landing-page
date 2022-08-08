@@ -2,7 +2,9 @@ import React, {useState} from 'react';
 import styled from 'styled-components';
 import { Logo } from '../../store/data';
 import menuicon from './/menuicon.svg';
-import menuiconClose from '../../assets/menuiconClose.svg'
+import menuiconClose from '../../assets/menuiconClose.svg';
+import { Link } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link';
 
 
 const Header = styled.header`
@@ -116,15 +118,14 @@ const ListItem = styled.li`
     color:#fff;
 
     a{
-        text-decoration: none;
-        color:#fff;
+       
         padding: 14px 40px;
         font-family: techathonFont;
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
         line-height: 35px;
-        color: #FFFFFF;
+        color: #1D1D1D;
     }
 
     @media only screen and (min-width:1440px){
@@ -133,7 +134,7 @@ const ListItem = styled.li`
 
     a{
         text-decoration: none;
-        color:#fff;
+      
         padding: 14px 40px;
         font-family: techathonFont;
         font-style: normal;
@@ -178,17 +179,18 @@ export const NavBar = () => {
                 < MenuIcon src={menuiconClose} />
                 </HambugerMenu>
                     <UnorderdList>
-                        <ListItem><a href='#component'>Home</a></ListItem>
-                        <ListItem><a href='#component'>Componets</a></ListItem>
-                        <ListItem><a href='#component'>Events</a></ListItem>
-                        <ListItem><a href='#component'>About us</a></ListItem>
-                        <ListItem><a href='#component'>Partners</a></ListItem>
+                        <ListItem><HashLink smooth to="#home">Home</HashLink></ListItem>
+                        <ListItem><HashLink smooth to="#components">Components</HashLink></ListItem>
+                        <ListItem><HashLink smooth to="#events">Events</HashLink></ListItem> 
+                        <ListItem><Link to="/about">About us</Link></ListItem>
+                        <ListItem><HashLink smooth to="#partners">Partners</HashLink></ListItem>
                     </UnorderdList>
                 </ListContainer > {/* List conatiner start */}
                 <HambugerMenu  onClick={()=>setToggleNav(!toggleNav)}>
                     < MenuIcon src={menuicon} />
+                  
                 </HambugerMenu>
-               
+                  
                 </NavContainer>
         </Nav>
      

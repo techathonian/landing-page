@@ -143,7 +143,7 @@ const HeroIllustration = styled.div`
 
 export const HeroSection = () => {
   return (
-    <Container>
+    <Container id='home'>
         <Wrapper>
             <HeroContent>
                 <HeroHeading>Mentoring you from the basics to Proficiency.</HeroHeading>
