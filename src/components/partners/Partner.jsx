@@ -9,7 +9,7 @@ const Container =styled.div`
 
 export const Partner = () => {
   return (
-    <Container>
+    <Container id="partners">
         
     <PartnerContent
         title="Meet our Partners"

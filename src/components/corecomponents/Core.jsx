@@ -145,7 +145,7 @@ color: #1D1D1D;
 export const Core = () => {
   return (
    
-      <CoreContainer>
+      <CoreContainer id="components">
         <CoreWrapper>
         <CoreHeading 
         data-aos="fade-up"
