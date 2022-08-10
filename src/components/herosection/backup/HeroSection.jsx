@@ -11,17 +11,9 @@ import bgpartern from '../../assets/bgpartern.svg'
 const Container =styled.div`
   background-image: url(https://firebasestorage.googleapis.com/v0/b/tecthathonlandingpage.appspot.com/o/assets%2Fbg%2FCircuit%20background%20dark.png?alt=media&token=42b2b1de-e65a-4c88-b2f7-d53086aa51dc);
 
-
 `;
 
 const Wrapper = styled.div`
-    
-        margin:0 128px;
-        padding:221px 0;
-        display: flex;
-        align-items:flex-start;
-        gap:39px;
-    @media only screen and (max-width:768px){
         margin:0 20px;
         padding:96px 0 0;
         display: flex;
@@ -29,33 +21,28 @@ const Wrapper = styled.div`
         align-items:flex-start;
         gap:39px;
       
-       
-      
-    }
+ 
+        
+
+    @media only screen and (min-width:1440px){
+        margin:0 128px;
+        padding:221px 0;
+        display: flex;
+        align-items:flex-start;
+        gap:39px;
+        }
 `;
 const HeroContent = styled.div`
+    order:2;
+   
+    @media only screen and (min-width:1440px){
         margin-top: 12px;
         width: 595px;
-@media only screen and (max-width:768px){
-    order:2;
- 
-    width: 100%;
+        
     }
 `;
 const HeroHeading = styled.h1`
-font-family: techathonFont;
-font-style: normal;
-font-weight: 500;
-font-size: 44px;
-line-height: 44px;
-display: flex;
-align-items: center;
-color: #32376F;
-width: 508px;
-
-@media only screen and (max-width:768px){
-/* width: 300px; */
-width:80%;
+width: 300px;
 margin: 0 auto ;
 font-family: techathonFont;
 font-style: normal;
@@ -66,40 +53,43 @@ display: flex;
 align-items: center;
 text-align: center;
 color: #32376F;
+
+
+@media only screen and (min-width:1440px){
+font-family: techathonFont;
+font-style: normal;
+font-weight: 500;
+font-size: 44px;
+line-height: 44px;
+display: flex;
+align-items: center;
+color: #32376F;
+width: 508px;
 }
+
 `;
 
 const HeroVectorArc = styled.img`
-      display: inline-block;
-    margin-top: 8px;
-  
-    margin-left: 190px;
-/* background-color: red; */
-    
-    @media only screen and (max-width:768px){
     display: inline-block;
     margin-top: 2px;
     width: 117px;
-    margin-left: 45%;
-    }
+  
+    margin-left: 140px;
+    
 
 
 
+
+@media only screen and (min-width:1440px){
+    display: inline-block;
+    margin-top: 8px;
+    margin-left: 190px;
+/* background-color: red; */
+}
 
 `;
 const HeroText = styled.p`
- margin-top: 17px;
-    font-family: techathonFont;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 32px;
-    display: flex;
-    align-items: center;
-    color: #32376F;
-@media only screen and (max-width:768px){
-        /* width: 314px; */
-        width:95%;
+        width: 314px;
         margin-top:10px;
         margin-left: 10px;
         font-family: techathonFont;
@@ -109,13 +99,26 @@ const HeroText = styled.p`
         line-height: 24px;
         text-align: center;
         color: #32376F;
+       
+        @media only screen and (min-width:428px){
+
+
+            margin-left: 35px;
 }
-   
+    @media only screen and (min-width:1440px){
+    margin-top: 17px;
+    font-family: techathonFont;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    color: #32376F;
+    }
 `;
 const HeroIllustration = styled.div`
-
-    margin-right: 94px;
-    @media only screen and (max-width:768px){
+    
         width:335px;
         order: 1;
        
@@ -124,8 +127,21 @@ const HeroIllustration = styled.div`
         img{
             width:100%;
         }
+
+    @media only screen and (min-width:1440px){
+        margin-right: 94px;
     }
-       
+    @media only screen and (min-width:360px){
+        width:100%;
+        order: 1;
+      
+      
+    
+        img{
+            width:100%;
+        }
+    }
+
 `;
 
 
