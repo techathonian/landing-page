@@ -16,7 +16,7 @@ background-image: url();
 
 
 const MentorBox = styled.div`
-padding:0 128px;
+padding:50px  128px 0;
 
 
 @media only screen and (max-width:768px){
@@ -89,6 +89,7 @@ margin-top: 80px;
 
 @media only screen and (max-width:768px){
     gap:16px;
+    margin-top: 59px;
 }
 
 
@@ -98,11 +99,12 @@ display: grid;
 /* grid-template-columns: auto auto auto; */
 grid-template-columns:repeat(auto-fit, minmax(325px, auto));
 gap:30px;
-margin-top: 80px;
+/* margin-top: 80px; */
 
 
 @media only screen and (max-width:768px){
     gap:16px;
+    margin-top: 59px;
 }
 
 
@@ -138,7 +140,9 @@ const MentorsCardOne  = styled.div`
    
 }
 
-  
+@media only screen and (max-width:768px){
+    top:0px;
+}
 
 `;
 // Card start
@@ -172,7 +176,7 @@ const MentorsCardTwo  = styled.div`
    
 }
 
-  
+
 
 `;// Card start
 // Card start
@@ -207,7 +211,9 @@ const MentorsCardThree  = styled.div`
    
 }
 
-  
+@media only screen and (max-width:768px){
+    top:0px;
+}
 
 `;// Card start
 
@@ -297,6 +303,7 @@ const JoinHeading=styled.h3`
             line-height: 36px;
             text-align: center;
             color: #FFFFFF;
+            padding:0 20px;
         }
 `;
 
