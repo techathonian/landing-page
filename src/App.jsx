@@ -12,6 +12,7 @@ import { NavBar } from './components/navbar/NavBar';
 import { Home } from './pages/home/Home';
 
 import { BrowserRouter as Router, Routes, Route, Link} from "react-router-dom";
+import { About } from './pages/aboutpage/About';
 
 
 const Container =styled.div`
@@ -30,7 +31,7 @@ function App() {
       <NavBar />
         <Routes>
             <Route path="/" element={<Home />}/>
-            <Route path="/about" element={<AboutPage />}/>
+            <Route path="/about" element={<About />}/>
             <Route path="*" element={<ErrorPage />}/>
         </Routes>
         <Footer />

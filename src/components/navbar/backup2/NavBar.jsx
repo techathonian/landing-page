@@ -186,8 +186,7 @@ export const NavBar = () => {
                     <img src={officalLogo}/>
                 </LogoContainer>
                 </Link>
-              
-               <ListContainer  id={`${toggleNav ? "hidden" : ""}`}>{/* List conatiner start */}
+                <ListContainer  id={`${toggleNav ? "hidden" : ""}`}>{/* List conatiner start */}
                 <HambugerMenu  onClick={()=>setToggleNav(!toggleNav)}>
                 < MenuIcon src={menuiconClose} />
                 </HambugerMenu>
@@ -200,7 +199,6 @@ export const NavBar = () => {
                         <ListItem><HashLink smooth to="#partners">Partners</HashLink></ListItem>
                     </UnorderdList>
                 </ListContainer > {/* List conatiner start */}
-               
                 <HambugerMenu  onClick={()=>setToggleNav(!toggleNav)}>
                     < MenuIcon src={menuicon} />
                   
