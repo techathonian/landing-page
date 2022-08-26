@@ -8,6 +8,11 @@ const ButtonContainer = styled.div`
 width:380px; */
 
 `;
+
+const AnchorLink = styled.a`
+  text-decoration: none;
+
+`;
 const ButtonElem = styled.button`
 
 padding: 10px 30px 10px 30px;
@@ -60,7 +65,7 @@ border-radius: 0px; */
 export const Button = ({BtnText}) => {
   return (
     <ButtonContainer>
-        <ButtonElem><span>{BtnText}</span> <Arrow src={arrow} /></ButtonElem>
+       <AnchorLink href='https://techathonian.github.io/community-code-of-conduct/' target='_blank' rel='noreferrer'><ButtonElem><span>{BtnText}</span> <Arrow src={arrow} /></ButtonElem></AnchorLink>
 
     </ButtonContainer>
   )

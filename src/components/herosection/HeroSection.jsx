@@ -15,27 +15,51 @@ const Container =styled.div`
 `;
 
 const Wrapper = styled.div`
-    
+
         margin:0 128px;
         padding:221px 0;
         display: flex;
         align-items:flex-start;
         gap:39px;
+  
+ 
+    
+
+        /* combing 2 break points */
+        @media only screen and (max-width:1200px) and (min-width:769px){
+            margin:0 80px;
+      
+            
+            
+            
+            
+        }
+         /* combing 2 break points */
     @media only screen and (max-width:768px){
-        margin:0 20px;
+        margin:0 0px 0 0px;
         padding:96px 0 0;
         display: flex;
         flex-direction: column;
         align-items:flex-start;
         gap:39px;
+        
+       
       
        
       
     }
-`;
+   
+`; 
+
 const HeroContent = styled.div`
         margin-top: 12px;
-        width: 595px;
+        width: 45%;
+        
+
+
+        @media only screen and (max-width:1200px) and (min-width:769px){
+            width: 45%;
+    }
 @media only screen and (max-width:768px){
     order:2;
  
@@ -51,7 +75,15 @@ line-height: 44px;
 display: flex;
 align-items: center;
 color: #32376F;
-width: 508px;
+/* width: 508px; */
+
+@media only screen and (max-width:1366px) and (min-width:1201px){
+    font-size: 44px;
+    }
+
+@media only screen and (max-width:1200px) and (min-width:769px){
+            font-size: 3vw;
+    }
 
 @media only screen and (max-width:768px){
 /* width: 300px; */
@@ -74,6 +106,18 @@ const HeroVectorArc = styled.img`
     margin-top: 8px;
   
     margin-left: 190px;
+    
+   
+    @media only screen and (max-width:1300px) and (min-width:1201px){
+        margin-left: 8%;
+    }
+   
+    @media only screen and (max-width:1200px) and (min-width:769px){
+        margin-left: 25%;
+    }
+    @media only screen and (max-width:1180px) and (min-width:770px){
+        margin-left: 8%;
+    }
 /* background-color: red; */
     
     @media only screen and (max-width:768px){
@@ -97,6 +141,11 @@ const HeroText = styled.p`
     display: flex;
     align-items: center;
     color: #32376F;
+
+@media only screen and (max-width:1200px) and (min-width:769px){
+       font-size: 18px;
+    }
+   
 @media only screen and (max-width:768px){
         /* width: 314px; */
         width:95%;
@@ -114,7 +163,27 @@ const HeroText = styled.p`
 `;
 const HeroIllustration = styled.div`
 
+width:45%;
+
     margin-right: 94px;
+    img{
+        width:100%;
+    }
+   
+
+      /* combing 2 break points */
+      @media only screen and (max-width:1200px) and (min-width:769px){
+          width: 45%;
+        margin: 0 auto;
+      
+        order: 1;
+          
+        img{
+            width:100%;
+        }
+            
+        }
+         /* combing 2 break points */
     @media only screen and (max-width:768px){
         width:335px;
         order: 1;
@@ -122,7 +191,7 @@ const HeroIllustration = styled.div`
         margin:0 auto ;
     
         img{
-            width:100%;
+            width:98.8%;
         }
     }
        
@@ -149,7 +218,7 @@ export const HeroSection = () => {
                 {/* image link here */}
                 <HeroVectorArc  src={Heroarc} />
                 <HeroText> 
-                We provide you with a sutable environment for learning
+                We provide you with a suitable environment for learning
                 while engaging in a systematic approach to imbibe
                 you with the necessary knowledge and skills.
                 </HeroText>

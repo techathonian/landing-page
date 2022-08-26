@@ -29,6 +29,7 @@ const Text = styled.p`
   line-height: 24px;
   margin-top: 4px;
   font-family: techathonFont;
+  opacity:0.3;
 `;
 
 

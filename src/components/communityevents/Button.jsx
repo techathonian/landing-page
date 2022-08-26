@@ -18,6 +18,10 @@ background-color: red;
 }
 
 `;
+const AnchorLink = styled.a`
+  text-decoration: none;
+
+`;
 const ButtonElem = styled.button`
 display: block;
 margin: auto;
@@ -57,8 +61,9 @@ border-radius: 0px;
 export const Button = ({BtnText}) => {
   return (
     <Wrapper>
-   
+        <AnchorLink href='https://forms.gle/NnPexB59VkgcNxts7' target='_blank' rel='noreferrer'>
         <ButtonElem><span>{BtnText}</span> <Arrow src={arrow} /></ButtonElem>
+        </AnchorLink>
 
     
     </Wrapper>

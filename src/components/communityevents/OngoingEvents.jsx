@@ -17,7 +17,7 @@ const UnorderdList = styled.ul`
   font-size: 12.136px;
   line-height: 18px;
 
-  ul li::after:nth-child(2){
+  ul li::nth-child(2){
     list-style-image: url(https://firebasestorage.googleapis.com/v0/b/tecthathonlandingpage.appspot.com/o/assets%2Fbg%2Fdot2.png?alt=media&token=91b97616-590d-4310-b8c5-14c5ec8fde6b);
   }
 `;

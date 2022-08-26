@@ -30,12 +30,17 @@ const Nav = styled.nav`
 
 const NavContainer = styled.div`
         margin:0 128px ;
+        /* margin:0 0.060078125% ;  */
         height: 80px;
         display: flex;
         justify-content: space-between;
         align-items: center;
 
-       
+        @media only screen and (max-width:1200px) and (min-width:769px){
+            margin:0 80px ;
+
+
+        }
         @media only screen and (max-width:768px){
         margin:0 20px;
         height: 80px;
@@ -44,6 +49,7 @@ const NavContainer = styled.div`
         align-items: center;
      
         }
+       
         /* Navcontainer margin when res is 820 */
     
      
@@ -117,6 +123,30 @@ const ListItem = styled.li`
         color: #FFFFFF;
     }
 
+    a:hover{
+        color: #FFFFFF;
+        opacity: 0.8;
+        transition: 2sec linear;
+    }
+
+    @media only screen and (max-width:1008px) and (min-width:769px){
+
+        display:inline;
+        color:#fff;
+
+    a{
+        text-decoration: none;
+      
+        padding: 14px 20px;
+        font-family: techathonFont;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+    
+     
+    }
+}
+
     @media only screen and (max-width:768px){
         display:flex;
         color:#1D1D1D;
@@ -130,6 +160,16 @@ const ListItem = styled.li`
         font-size: 18px;
         line-height: 35px;
         color: #1D1D1D;
+    }
+    a:hover{
+       
+        padding: 14px 40px;
+        font-family: techathonFont;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 35px;
+        color: #32376F;
     }
     }
     /* Responsive for anchor tags when res is 820 */
@@ -159,6 +199,21 @@ const HambugerMenu = styled.div`
         padding:7px 3.5px;
         width: 50px;
         height: 50px;
+      
+     }
+
+`;
+const HambugerMenuClose = styled.div`
+     display: none;
+     @media only screen and (max-width:768px){
+        display: block;
+        padding:7px 3.5px;
+        width: 50px;
+        height: 50px;
+        margin-left: 70%;
+        /* position: fixed;
+        right:20px; */
+
      }
 
 `;
@@ -168,8 +223,12 @@ const MenuIcon = styled.img`
 
    @media only screen and (max-width:768px){
     display: block;
-    width:100%;
-    height:100%;
+   
+    width:100%; 
+   
+  
+     height:100%;
+ 
    }
 
 `;
@@ -188,9 +247,9 @@ export const NavBar = () => {
                 </Link>
               
                <ListContainer  id={`${toggleNav ? "hidden" : ""}`}>{/* List conatiner start */}
-                <HambugerMenu  onClick={()=>setToggleNav(!toggleNav)}>
+                <HambugerMenuClose onClick={()=>setToggleNav(!toggleNav)}>
                 < MenuIcon src={menuiconClose} />
-                </HambugerMenu>
+                </HambugerMenuClose>
                     <UnorderdList>
                     <ListItem><Link to="/">Home</Link></ListItem>
                         {/* <ListItem><HashLink smooth to="#home">Home</HashLink></ListItem> */}

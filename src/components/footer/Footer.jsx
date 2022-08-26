@@ -6,6 +6,8 @@ import styled from 'styled-components';
 import { FooterNavigate } from '../../store/data';
 import { FooterLinks } from '../../store/data';
 
+import { HashLink } from 'react-router-hash-link';
+
 const Container =styled.div`
     background-color: #32376F;
     padding:31px 0 41px;
@@ -117,6 +119,10 @@ const Heading = styled.h2`
         color: #FFFFFF;
     }
  `;
+const ListItem = styled.li`
+
+ `;
+
 
  const Privacy = styled.h3`
     font-style: normal;
@@ -237,6 +243,43 @@ const PrivacyTermsFlex = styled.div`
     font-family: techathonFont;
  `;
 
+const AnchorLink = styled.a`
+        text-decoration: none;
+        padding-top: 8px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #FFFFFF;
+        font-family: techathonFont;
+
+        @media only screen and (min-width:768px){
+        padding-bottom: 40px;
+        font-style: normal;
+        font-weight: 450;
+        font-size: 16px;
+        line-height: 30px;
+
+        color: #FFFFFF;
+    }
+    @media only screen and (min-width:1024px){
+        padding-bottom: 40px;
+        font-style: normal;
+        font-weight: 450;
+        font-size: 24px;
+        line-height: 30px;
+
+        color: #FFFFFF;
+    }
+
+    &&:hover{
+        color: #FFFFFF;
+        opacity: 0.8;
+    }
+ `;
+
+
+
 export const Footer = () => {
 
     const renderLogo = Logo.map((logo, key)=>{
@@ -251,7 +294,11 @@ export const Footer = () => {
         return(
           
              <Content icon={icons} key={key}>
-                <img src={icons.icon} alt=""/>
+                <AnchorLink href='https://twitter.com/Techathonian' target='_blank' rel='noreferrer'><img src={icons.icon} alt=""/></AnchorLink>
+                <AnchorLink href='https://www.instagram.com/techathonian' target='_blank' rel='noreferrer' ><img src={icons.twicon} alt=""/></AnchorLink>
+                <AnchorLink href='https://linkedin.com/Techathonian' target='_blank' rel='noreferrer' ><img src={icons.liicon} alt=""/></AnchorLink>
+                <AnchorLink href='https://web.facebook.com/Techathonian' target='_blank' rel='noreferrer'><img src={icons.fbicon} alt=""/></AnchorLink>
+                
                  
             </Content>
            
@@ -276,8 +323,28 @@ export const Footer = () => {
             {
                 FooterNavigate.map((footernav, key)=>(
                 <List  key={key}>
-                    <li >
+                    {/* <li >
                         {footernav.navigate}
+                    </li> */}
+                     <ListItem >
+                    <Link style={{color:'white', textDecoration:'none'}} smooth to="/">{footernav.navigate}</Link>
+                       
+                    </ListItem>
+                    <li >
+                    <HashLink style={{color:'white', textDecoration:'none'}} smooth to="#components">{footernav.comNavigate}</HashLink>
+                       
+                    </li>
+                    <li >
+                    <HashLink  style={{color:'white', textDecoration:'none'}}smooth to="#events">{footernav.evNavigate}</HashLink>
+                       
+                    </li>
+                    <li >
+                    <Link style={{color:'white', textDecoration:'none'}} to="/about">{footernav.atbNavigate}</Link>
+                       
+                    </li>
+                    <li >
+                    <HashLink style={{color:'white', textDecoration:'none'}} smooth to="#partners">{footernav.partNavigate}</HashLink>
+                       
                     </li>
                 </List>
                 ))}   
@@ -291,8 +358,12 @@ export const Footer = () => {
         {
             FooterLinks.map((footerlinks, key)=>(
             <List  key={key}>
-                <li>{footerlinks.foorterlinks}
-                </li>
+                {/* <li>
+                    {footerlinks.foorterlinks}
+                </li> */}
+                 <li><AnchorLink href='https://forms.gle/NnPexB59VkgcNxts7' target='_blank' rel='noreferrer'>{footerlinks.foorterlinks}</AnchorLink></li>
+                <li><AnchorLink href='https://techathonian.github.io/community-code-of-conduct/' target='_blank' rel='noreferrer'>{footerlinks.Codefoorterlinks}</AnchorLink></li>
+                <li><AnchorLink href='https://forms.gle/ucYaFMSiBRiTcFyS9' target='_blank' rel='noreferrer'>{footerlinks.Mentorfoorterlinks}</AnchorLink></li>
             </List>
         ))}
         </div> 
@@ -310,8 +381,8 @@ export const Footer = () => {
         {renderIcons }
         </ContentWrapper>
         <PrivacyTermsFlex >
-            <Term>Terms</Term>
-            <Privacy>Privacy Policy</Privacy>
+            <Term><AnchorLink href='https://docs.google.com/document/d/1bjQUuCOOQTi09chuXZaxbCkQbTVEVN65qMWpSui-8jk/edit?usp=sharing' target='_blank' rel='noreferrer'>Terms</AnchorLink></Term>
+            <Privacy><AnchorLink href='https://docs.google.com/document/d/1bABb73XUXEXTFwuWMXwv3LZY787EclszrYGQ7oNxB9I/edit?usp=sharing' target='_blank' rel='noreferrer'>Privacy Policy</AnchorLink></Privacy>
         </PrivacyTermsFlex>
         <Copyright>&copy; 2022 Techathon Community</Copyright>
         </div>
@@ -322,9 +393,26 @@ export const Footer = () => {
         {/* Naviagations here */}
             {
                 FooterNavigate.map((footernav, key)=>(
-                <List  key={key}>
+                <List  key={key} >
+                    <ListItem >
+                    <Link style={{color:'white', textDecoration:'none'}} smooth to="/">{footernav.navigate}</Link>
+                       
+                    </ListItem>
                     <li >
-                        {footernav.navigate}
+                    <HashLink style={{color:'white', textDecoration:'none'}} smooth to="#components">{footernav.comNavigate}</HashLink>
+                       
+                    </li>
+                    <li >
+                    <HashLink  style={{color:'white', textDecoration:'none'}}smooth to="#events">{footernav.evNavigate}</HashLink>
+                       
+                    </li>
+                    <li >
+                    <Link style={{color:'white', textDecoration:'none'}} to="/about">{footernav.atbNavigate}</Link>
+                       
+                    </li>
+                    <li >
+                    <HashLink style={{color:'white', textDecoration:'none'}} smooth to="#partners">{footernav.partNavigate}</HashLink>
+                       
                     </li>
                 </List>
                 ))}   
@@ -338,8 +426,10 @@ export const Footer = () => {
         {
             FooterLinks.map((footerlinks, key)=>(
             <List  key={key}>
-                <li>{footerlinks.foorterlinks}
-                </li>
+                <li><AnchorLink href='https://forms.gle/NnPexB59VkgcNxts7' target='_blank' rel='noreferrer'>{footerlinks.foorterlinks}</AnchorLink></li>
+                <li><AnchorLink href='https://techathonian.github.io/community-code-of-conduct/' target='_blank' rel='noreferrer'>{footerlinks.Codefoorterlinks}</AnchorLink></li>
+                <li><AnchorLink href='https://forms.gle/ucYaFMSiBRiTcFyS9' target='_blank' rel='noreferrer'>{footerlinks.Mentorfoorterlinks}</AnchorLink></li>
+                
             </List>
         ))}
         <Heading>

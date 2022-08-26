@@ -32,7 +32,7 @@ const CoreCards = styled.div`
     }
     @media only screen and (min-width:1024px){
         width:30%;
-        margin:10px 0;
+        margin:60px 0 56px;
     
     }
  
@@ -45,13 +45,25 @@ const CoreCardImage = styled.img`
 const CoreCardTitle = styled.h3`
 /* Designers used Lato font which is not ours */
  font-family: techathonFont;
- font-weight: 700;
- font-size:19.7727px;
+ font-weight: 400;
+ font-size:24px;
  line-height: 24px;
  text-align: center;
  margin-top:19.77px;
  margin-bottom:23.27px;
+
+ @media only screen and (max-width:768px){
+
+    font-family: techathonFont;
+    font-weight: 700;
+    font-size:19.7727px;
+    line-height: 24px;
+    text-align: center;
+    margin-top:19.77px;
+    margin-bottom:23.27px;
+ }
 `;
+
 const CardDescription = styled.p`
 /* Designers used Lato font which is not ours */
     font-family: techathonFont;

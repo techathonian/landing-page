@@ -13,12 +13,12 @@ export const Events = [
     }, 
     {
         eventTitle: 'Community Hangout',
-        text:'Techathon 2.0 is expected to kickstart in the nearest future with lots of opportunities for you to explore, network and learn.'
+        text:'Techathon community hangout is a avenue for mentors and mentees to meet, relax, catch-up and connect physically. The hangout is free for everyone.'
 
     }, 
     {
         eventTitle: 'Campus Ambassador',
-        text:'Techathon 2.0 is expected to kickstart in the nearest future with lots of opportunities for you to explore, network and learn.'
+        text:'Do you want to make an impact in your school? become our campus ambassador in your school and preach our gospel to your follow students. No location or age restrictions.'
 
     }, 
 ];
@@ -49,13 +49,13 @@ export const Socials = [
         icon:'https://firebasestorage.googleapis.com/v0/b/tecthathonlandingpage.appspot.com/o/tt.png?alt=media&token=506cffe7-5c75-4de6-b818-3331219b8da0'
     },
     {
-        icon:'https://firebasestorage.googleapis.com/v0/b/tecthathonlandingpage.appspot.com/o/tig.png?alt=media&token=3f35ddfc-f154-4ec7-82ee-bc41de2570f8'
+        twicon:'https://firebasestorage.googleapis.com/v0/b/tecthathonlandingpage.appspot.com/o/tig.png?alt=media&token=3f35ddfc-f154-4ec7-82ee-bc41de2570f8'
     },
     {
-        icon:'https://firebasestorage.googleapis.com/v0/b/tecthathonlandingpage.appspot.com/o/linkedin.png?alt=media&token=dd6cf603-7359-4f2d-bbec-a95798b83087'
+        liicon:'https://firebasestorage.googleapis.com/v0/b/tecthathonlandingpage.appspot.com/o/linkedin.png?alt=media&token=dd6cf603-7359-4f2d-bbec-a95798b83087'
     },
     {
-        icon:'https://firebasestorage.googleapis.com/v0/b/tecthathonlandingpage.appspot.com/o/facebook.png?alt=media&token=ca9c114e-ec59-4f0b-9ee6-ff0facf697a3'
+        fbicon:'https://firebasestorage.googleapis.com/v0/b/tecthathonlandingpage.appspot.com/o/facebook.png?alt=media&token=ca9c114e-ec59-4f0b-9ee6-ff0facf697a3'
     }
 ];
 
@@ -65,16 +65,16 @@ export const FooterNavigate  = [
         navigate:"Home"
     },
     {
-        navigate:"Components"
+        comNavigate:"Components"
     },
     {
-        navigate:"Events"
+        evNavigate:"Events"
     },
     {
-        navigate:"About us"
+        atbNavigate:"About us"
     },
     {
-        navigate:"Partners"
+        partNavigate:"Partners"
     },
 
 
@@ -85,12 +85,12 @@ export const FooterLinks  = [
         foorterlinks:"Join waitlist"
     },
     {
-        foorterlinks:"Code of conduct"
+        Codefoorterlinks:"Code of conduct"
     },
     {
-        foorterlinks:"Become a mentor"
+        Mentorfoorterlinks:"Become a mentor"
     },
-  
+ 
 
 
 ];
@@ -120,6 +120,24 @@ export const Mentors  =   [
         track:'User Interface',
         name:'Sharach Lam',
         professionandlocation:'Product design, Lagos Nigeria'
+    },
+    {
+        image:'https://firebasestorage.googleapis.com/v0/b/tecthathonlandingpage.appspot.com/o/assets%2Fbg%2Fmentors%2FAbass.jpeg?alt=media&token=04f330af-9b71-41d9-8977-89c35b7aa1c3',
+        track:'Community manager',
+        name:'Aisha Abass',
+        professionandlocation:'Social Media Manager, Abuja Nigeria'
+    },
+    {
+        image:'https://firebasestorage.googleapis.com/v0/b/tecthathonlandingpage.appspot.com/o/assets%2Fbg%2Fmentors%2FAbass.jpeg?alt=media&token=04f330af-9b71-41d9-8977-89c35b7aa1c3',
+        track:'UI/UX',
+        name:'James Aransiola',
+        professionandlocation:'Product designer, Ondo Nigeria'
+    },
+    {
+        image:'https://firebasestorage.googleapis.com/v0/b/tecthathonlandingpage.appspot.com/o/assets%2Fbg%2Fmentors%2FAbass.jpeg?alt=media&token=04f330af-9b71-41d9-8977-89c35b7aa1c3',
+        track:'Community Manager',
+        name:'Aderibigbe Adekorede',
+        professionandlocation:'Front End Developer, Ondo Nigeria'
     },
 
 ];
