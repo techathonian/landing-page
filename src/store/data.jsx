@@ -13,7 +13,7 @@ export const Events = [
     }, 
     {
         eventTitle: 'Community Hangout',
-        text:'Techathon community hangout is a avenue for mentors and mentees to meet, relax, catch-up and connect physically. The hangout is free for everyone.'
+        text:'Techathon community hangout is an avenue for mentors and mentees to meet, relax, catch-up and connect physically. The hangout is free for everyone.'
 
     }, 
     {
