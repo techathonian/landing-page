@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
+import { BecomeAMentors } from './BecomeAMentors';
 import { Button } from './Button';
 const Container = styled.div`
 /* padding-top: 36px; */
@@ -54,7 +55,8 @@ export const Meet = () => {
         >
             A team of professionals committed to providing the skill and mentoring to anyone who want to transition into tech from a non-technical background.
         </Text>
-        <Button BtnText={'Meet our mentors'} />
+        
+        <BecomeAMentors BtnText={'Meet our mentors'} />
         </Wrapper>
     </Container>
   )

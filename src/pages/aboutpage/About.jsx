@@ -216,6 +216,117 @@ const MentorsCardThree  = styled.div`
 }
 
 `;// Card start
+// Card start
+const MentorsCardFour  = styled.div`
+   
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/tecthathonlandingpage.appspot.com/o/assets%2Fbg%2Fmentors%2FAbass.jpeg?alt=media&token=04f330af-9b71-41d9-8977-89c35b7aa1c3);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:329px;
+    height: 350px;
+    border-radius: 8px;
+    margin:16px auto 0;
+    border: 2px solid #986DF6;
+    padding:16px;
+    position:relative;
+    top:44px;
+    overflow:hidden;   
+
+
+
+
+    &:hover{
+   
+    filter: sepia(40%);
+
+   .overview {
+        transform:translateY(0);
+        cursor:pointer;
+    }
+    
+   
+}
+
+@media only screen and (max-width:768px){
+    top:0px;
+}
+
+`;// Card start end
+// Card start
+const MentorsCardFive  = styled.div`
+   
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/tecthathonlandingpage.appspot.com/o/assets%2Fbg%2Fmentors%2Fflawless.jpeg?alt=media&token=a8197e10-8a55-4384-8eea-ec100afe182d);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:329px;
+    height: 350px;
+    border-radius: 8px;
+    margin:16px auto 0;
+    border: 2px solid #986DF6;
+    padding:16px;
+    position:relative;
+    top:44px;
+    overflow:hidden;   
+
+
+
+
+    &:hover{
+   
+    filter: sepia(40%);
+
+   .overview {
+        transform:translateY(0);
+        cursor:pointer;
+    }
+    
+   
+}
+
+@media only screen and (max-width:768px){
+    top:0px;
+}
+
+`;// Card start end
+// Card start
+const MentorsCardSix  = styled.div`
+   
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/tecthathonlandingpage.appspot.com/o/assets%2Fbg%2Fmentors%2Fkorede.jpeg?alt=media&token=439d1322-3ff8-4284-9b07-11af41e54078);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:329px;
+    height: 350px;
+    border-radius: 8px;
+    margin:16px auto 0;
+    border: 2px solid #986DF6;
+    padding:16px;
+    position:relative;
+    top:44px;
+    overflow:hidden;   
+
+
+
+
+    &:hover{
+   
+    filter: sepia(40%);
+
+   .overview {
+        transform:translateY(0);
+        cursor:pointer;
+    }
+    
+   
+}
+
+@media only screen and (max-width:768px){
+    top:0px;
+}
+
+`;// Card start end
 
 const Heading = styled.h2`
     padding:10px 20px 10px 20px ;
@@ -354,9 +465,9 @@ export const About = () => {
                   <StyledMentorName >Lamodots Wisdom</StyledMentorName>
                    <StyledMentorProfession >Front-end Developer, Lead Mentor</StyledMentorProfession>
                    <div style={{display:'flex', gap:'16px', alignItems:'center'}}>
-                   <a href='#'><img src={Twitter}  style={{ width:'32px'}}/></a>
+                   <a href='https://twitter.com/lamodots'><img src={Twitter}  style={{ width:'32px'}}/></a>
                    <a href='#'><img src={Ig}  style={{ width:'32px'}}/></a>
-                   <a href='#'><img src={LinkIn}  style={{ width:'28px'}}/></a>
+                   <a href='https://www.linkedin.com/in/lamodot/'><img src={LinkIn}  style={{ width:'28px'}}/></a>
                    </div>
                   </StyledMentor>
                 </MentorsCardOne  >
@@ -412,7 +523,7 @@ export const About = () => {
        <MentorBox>
             <FlexContainer>
             
-            <MentorsCardOne style={{marginTop:'44px',}}
+            <MentorsCardFour  style={{marginTop:'44px',}}
             data-aos="fade-up"
         data-aos-offset="200"
         data-aos-delay="50"
@@ -420,18 +531,19 @@ export const About = () => {
         data-aos-easing="ease-in-out"
             
             >
-                <Heading>Developer</Heading>
+                <Heading>Writer</Heading>
                   <StyledMentor className='overview'>
-                  <StyledMentorName >Lamodots Wisdom</StyledMentorName>
-                   <StyledMentorProfession >Front-end Developer, Lead Mentor</StyledMentorProfession>
+                  <StyledMentorName >Aisha Abass</StyledMentorName>
+                   <StyledMentorProfession >Social Media Manager</StyledMentorProfession>
                    <div style={{display:'flex', gap:'16px', alignItems:'center'}}>
                    <a href='#'><img src={Twitter}  style={{ width:'32px'}}/></a>
                    <a href='#'><img src={Ig}  style={{ width:'32px'}}/></a>
                    <a href='#'><img src={LinkIn}  style={{ width:'28px'}}/></a>
                    </div>
                   </StyledMentor>
-                </MentorsCardOne  >
-                <MentorsCardTwo style={{marginTop:'44px',}}
+                </MentorsCardFour  >
+
+                <MentorsCardFive style={{marginTop:'44px',}}
                 data-aos="fade-up"
         data-aos-offset="200"
         data-aos-delay="40"
@@ -439,18 +551,19 @@ export const About = () => {
         data-aos-easing="ease-in-out"
                 
                 >
-                <Heading>Developer</Heading>
+                <Heading>UI/UX</Heading>
                   <StyledMentor className='overview'>
-                  <StyledMentorName >Chigbo James</StyledMentorName>
-                   <StyledMentorProfession >Front-end Developer, React Js Mentor</StyledMentorProfession>
+                  <StyledMentorName >James Aransiola</StyledMentorName>
+                   <StyledMentorProfession >Product designer</StyledMentorProfession>
                    <div style={{display:'flex', gap:'16px', alignItems:'center'}}>
                    <a href='#'><img src={Twitter}  style={{ width:'32px'}}/></a>
                    <a href='#'><img src={Ig}  style={{ width:'32px'}}/></a>
                    <a href='#'><img src={LinkIn}  style={{ width:'28px'}}/></a>
                    </div>
                   </StyledMentor>
-                </MentorsCardTwo  >
-                <MentorsCardThree style={{marginTop:'44px',}}
+                </MentorsCardFive>
+
+                <MentorsCardSix style={{marginTop:'44px',}}
                 data-aos="fade-up"
         data-aos-offset="200"
         data-aos-delay="50"
@@ -459,17 +572,17 @@ export const About = () => {
                 
                 
                 >
-                <Heading>UI/UX</Heading>
+                <Heading>Community </Heading>
                   <StyledMentor className='overview'>
-                  <StyledMentorName >Kudirat Ibeabuchi</StyledMentorName>
-                   <StyledMentorProfession >Product Designer, Product Design Mentor</StyledMentorProfession>
+                  <StyledMentorName >Aderibigbe Adekorede</StyledMentorName>
+                   <StyledMentorProfession >Front End Developer, Community manager</StyledMentorProfession>
                    <div style={{display:'flex', gap:'16px', alignItems:'center'}}>
-                   <a href='#'><img src={Twitter}  style={{ width:'32px'}}/></a>
+                   <a href='https://twitter.com/hardecorede'><img src={Twitter}  style={{ width:'32px'}}/></a>
                    <a href='#'><img src={Ig}  style={{ width:'32px'}}/></a>
-                   <a href='#'><img src={LinkIn}  style={{ width:'28px'}}/></a>
+                   <a href='https://www.linkedin.com/in/adekorede-aderibigbe/'><img src={LinkIn}  style={{ width:'28px'}}/></a>
                    </div>
                   </StyledMentor>
-                </MentorsCardThree>
+                </MentorsCardSix>
                
             
             </FlexContainer>

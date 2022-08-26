@@ -63,19 +63,25 @@ const CoreSection =styled.section`
   
 `;
 const CoreHeading =styled.h2`
+ 
     font-weight:500 ;
     font-size:24px;
     color: #1d1d1d;
     text-align: center;
     line-height: 36px;
-    font-family: techathonFont;
+    font-family: techathonFont; 
   
     @media only screen and (min-width: 600px){
 
 }
 @media only screen and (min-width: 768px){
-   font-size:22px;
-   text-align:center;
+   /* font-size:22px; */
+   font-weight:600 ;
+    font-size:36px;
+    color: #1d1d1d;
+    text-align: center;
+    line-height: 44px;
+    font-family: techathonFont;
    
 }
 @media only screen and (min-width:1024px){
@@ -96,6 +102,7 @@ margin:auto;
   }
     
 `;
+
 const CoreText= styled.p`
     font-weight: 400;
     font-size:16px;
@@ -151,13 +158,13 @@ export const Core = () => {
         data-aos="fade-up"
         data-aos-offset="200"
         data-aos-delay="40"
-        data-aos-duration="1000"
+        data-aos-duration="700"
         data-aos-easing="ease-in-out"
         >
             Core components of the community
         </CoreHeading>
         <CoreText 
-         data-aos="fade-up"
+         data-aos="fade-in"
          data-aos-offset="200"
          data-aos-delay="50"
          data-aos-duration="1000"
@@ -180,7 +187,7 @@ export const Core = () => {
             
             image={el_group}
             title="Mentorship"
-            description='Continous learning is guaranteed as our commited mentors are ready to take you step by step and set you on the right track in your chosen career journey.'
+            description='Continuous learning is guaranteed as our committed mentors are ready to take you step by step and set you on the right track in your chosen career journey.'
        />
        <Cards
 
