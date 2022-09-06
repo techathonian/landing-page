@@ -13,7 +13,7 @@ export const Partner = () => {
         
     <PartnerContent
         title="Meet our Partners"
-        text="Join Our Partners to promote a seamless transitioning of mentees"
+        text="Join our partners to promote a seamless transitioning of one person.You can reachout to us at partners@techathonian.com"
         image={opensource}
         partner="Open Source Initiative"
     />

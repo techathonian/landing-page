@@ -590,8 +590,22 @@ export const About = () => {
        
        </MentorBox>
         <JoinUs>
-            <JoinHeading>Join us</JoinHeading>
-            <Text>Do enjoy helping others learn? then join us and become a mentor</Text>
+            <JoinHeading
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="40"
+            data-aos-duration="700"
+            data-aos-easing="ease-in-out"
+            
+            >Join us</JoinHeading>
+            <Text
+             data-aos="fade-in"
+             data-aos-offset="200"
+             data-aos-delay="50"
+             data-aos-duration="1000"
+             data-aos-easing="ease-in-out"
+            
+            >Do enjoy helping others learn? then join us and become a mentor</Text>
            <Button BtnText="Become a mentor"/>
         </JoinUs>
         

@@ -6,6 +6,8 @@ import styled from 'styled-components';
 import { FooterNavigate } from '../../store/data';
 import { FooterLinks } from '../../store/data';
 
+
+
 import { HashLink } from 'react-router-hash-link';
 
 const Container =styled.div`
@@ -285,7 +287,7 @@ export const Footer = () => {
     const renderLogo = Logo.map((logo, key)=>{
         return(
             <div logo={logo} key={key} >
-                <img src={logo.officalLogo} alt="" style={{width:'197px', height:'48px'}} />
+              <Link to='/'> <img src={logo.officalLogo} alt="" style={{width:'197px', height:'48px'}} /></Link>
                  
             </div>
         )
@@ -395,7 +397,7 @@ export const Footer = () => {
                 FooterNavigate.map((footernav, key)=>(
                 <List  key={key} >
                     <ListItem >
-                    <Link style={{color:'white', textDecoration:'none'}} smooth to="/">{footernav.navigate}</Link>
+                   <Link style={{color:'white', textDecoration:'none'}} smooth to="/" >{footernav.navigate}</Link>
                        
                     </ListItem>
                     <li >
@@ -403,15 +405,15 @@ export const Footer = () => {
                        
                     </li>
                     <li >
-                    <HashLink  style={{color:'white', textDecoration:'none'}}smooth to="#events">{footernav.evNavigate}</HashLink>
+                  <HashLink  style={{color:'white', textDecoration:'none'}}smooth to="#events">{footernav.evNavigate}</HashLink>
                        
                     </li>
                     <li >
-                    <Link style={{color:'white', textDecoration:'none'}} to="/about">{footernav.atbNavigate}</Link>
+                     <Link style={{color:'white', textDecoration:'none'}} to="/about">{footernav.atbNavigate}</Link>
                        
                     </li>
                     <li >
-                    <HashLink style={{color:'white', textDecoration:'none'}} smooth to="#partners">{footernav.partNavigate}</HashLink>
+                     <HashLink style={{color:'white', textDecoration:'none'}} smooth to="#partners">{footernav.partNavigate}</HashLink>
                        
                     </li>
                 </List>

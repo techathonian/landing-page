@@ -158,18 +158,56 @@ return(
 <Container >
 <Wrapper>
        <FlexContainerDeskLeft >
-            <Heading>{title}</Heading>  
-            <Text>{textLine1}</Text><br></br>
+            <Heading
+             data-aos="fade-up"
+             data-aos-offset="200"
+             data-aos-delay="40"
+             data-aos-duration="700"
+             data-aos-easing="ease-in-out"
+            
+            >{title}</Heading>  
+            <Text
+             data-aos="fade-in"
+             data-aos-offset="200"
+             data-aos-delay="50"
+             data-aos-duration="1000"
+             data-aos-easing="ease-in-out"
+            >{textLine1}</Text><br></br>
 
-            <Text>{textLine2}</Text><br></br>
+            <Text
+             data-aos="fade-in"
+             data-aos-offset="200"
+             data-aos-delay="50"
+             data-aos-duration="1000"
+             data-aos-easing="ease-in-out"
+            >{textLine2}</Text><br></br>
 
-           <Text>{textLine3}</Text><br></br>     
-            <Text>{textLine4}</Text><br></br>  
+           <Text
+            data-aos="fade-in"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+           >{textLine3}</Text><br></br>     
+            <Text
+                 data-aos="fade-in"
+                 data-aos-offset="200"
+                 data-aos-delay="50"
+                 data-aos-duration="1000"
+                 data-aos-easing="ease-in-out"
+            >{textLine4}</Text><br></br>  
             <Button BtnText={'Become a mentor'}/>
             {/* <Button BtnText={'Join the waitlist for Techathon 2.0'}/>  */}
        </FlexContainerDeskLeft>
        <FlexContainerDeskRight>
-           <Image src={desktopImage}/>
+           <Image src={desktopImage}
+           
+           data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-delay="40"
+            data-aos-duration="700"
+            data-aos-easing="ease-in-out"
+           />
        </FlexContainerDeskRight>
        {/* mobile content */}
        <FlexContainer >
@@ -177,8 +215,8 @@ return(
             
             data-aos="fade-up"
             data-aos-offset="200"
-            data-aos-delay="50"
-            data-aos-duration="1000"
+            data-aos-delay="40"
+            data-aos-duration="700"
             data-aos-easing="ease-in-out"
             
             >{title}</Heading>  
@@ -197,36 +235,36 @@ return(
        <FlexContainer>
        <Text
 
-            data-aos="fade-up"
+            data-aos="fade-in"
             data-aos-offset="200"
-            data-aos-delay="40"
+            data-aos-delay="50"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
        >{textLine1}</Text><br></br>
 
         <Text
         
-        data-aos="fade-up"
-            data-aos-offset="200"
-            data-aos-delay="40"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
+        data-aos="fade-in"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
         >{textLine2}</Text><br></br>
 
         <Text
-        data-aos="fade-up"
-        data-aos-offset="200"
-        data-aos-delay="40"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-out"
+          data-aos="fade-in"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
         
         >{textLine3}</Text><br></br>     
         <Text
-        data-aos="fade-up"
-        data-aos-offset="200"
-        data-aos-delay="40"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-out"
+          data-aos="fade-in"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
         
         
         >{textLine4}</Text>  
