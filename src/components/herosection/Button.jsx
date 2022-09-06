@@ -6,6 +6,7 @@ import {Link} from 'react-router-dom';
 
 const Wrapper = styled.div`
 
+
 `;
 const ButtonContainer = styled.div`
 
@@ -15,6 +16,7 @@ const ButtonContainer = styled.div`
 `;
 const AnchorLink = styled.a`
   text-decoration: none;
+  
 
 `;
 const ButtonElem = styled.button`
@@ -25,7 +27,8 @@ padding: 10px 30px;
 gap: 16px;
 border:none;
 margin-top:24px ;
-margin-left: 7px;
+/* margin-left: 7px; */
+margin-left: 0;
 /* width: 343px; */
 /* height: 55px; */
 
@@ -46,6 +49,7 @@ line-height: 35px;
 }
 @media only screen and (max-width:796px) and (min-width:769px){
     padding:10px 20px;
+ 
 }
 @media only screen and (max-width:768px){
   margin: 24px auto 0;

@@ -108,8 +108,8 @@ const renderNonCodingTrack = NonCodingTrack.map((noncoding, key)=>{
             <Heading            
             data-aos="fade-up"
             data-aos-offset="200"
-            data-aos-delay="50"
-            data-aos-duration="1000"
+            data-aos-delay="40"
+            data-aos-duration="700"
             data-aos-easing="ease-in-out"
             >
 
@@ -119,11 +119,11 @@ const renderNonCodingTrack = NonCodingTrack.map((noncoding, key)=>{
             <Text 
             
               
-            data-aos="fade-up"
-            data-aos-offset="200"
-            data-aos-delay="50"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
+            data-aos="fade-in"
+             data-aos-offset="200"
+             data-aos-delay="50"
+             data-aos-duration="1000"
+             data-aos-easing="ease-in-out"
             >
             Techathon 1.0 is currently on going with both coding and non-coding courses being offered We have over 2000+ students who registered for free. The  courses being offered includes; 
             </Text>

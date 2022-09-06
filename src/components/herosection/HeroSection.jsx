@@ -54,16 +54,19 @@ const Wrapper = styled.div`
 const HeroContent = styled.div`
         margin-top: 12px;
         width: 45%;
+      
         
 
 
         @media only screen and (max-width:1200px) and (min-width:769px){
             width: 45%;
+           
     }
 @media only screen and (max-width:768px){
     order:2;
  
     width: 100%;
+    
     }
 `;
 const HeroHeading = styled.h1`

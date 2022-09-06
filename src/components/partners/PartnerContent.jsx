@@ -56,12 +56,24 @@ export const PartnerContent = ({title, text, image, partner}) => {
   return (
     <Container>
       <Wrapper>
-        <Heading >{title}</Heading >
-        <Text>{text}</Text>
-        <Card>
+        <Heading      data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="40"
+            data-aos-duration="700"
+            data-aos-easing="ease-in-out">{title}</Heading >
+        <Text    data-aos="fade-in"
+             data-aos-offset="200"
+             data-aos-delay="50"
+             data-aos-duration="1000"
+             data-aos-easing="ease-in-out">{text}</Text>
+        {/* <Card  data-aos="fade-up"
+    data-aos-offset="200"
+    data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-out">
             <Image src={image} alt="" />
             <Small >{partner}</Small  >
-        </Card>
+        </Card> */}
         </Wrapper>
     </Container>
   )

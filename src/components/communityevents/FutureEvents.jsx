@@ -9,7 +9,10 @@ export const FutureEvents = () => {
     return(
       
       <div  value={events} key={key}>
-        <FutureEventSwipper event={events.eventTitle} text={events.text} />
+        <FutureEventSwipper event={events.eventTitle} text={events.text} 
+        
+        
+        />
       </div>
 
     )

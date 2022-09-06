@@ -42,16 +42,16 @@ export const FutureEventSwipper = ({event, text}) => {
         
         data-aos="fade-up"
         data-aos-offset="200"
-        data-aos-delay="50"
-        data-aos-duration="1000"
+        data-aos-delay="40"
+        data-aos-duration="700"
         data-aos-easing="ease-in-out"
         
         >{event}</Heading>
         <Text
           
-          data-aos="fade-up"
+          data-aos="fade-in"
           data-aos-offset="200"
-          data-aos-delay="40"
+          data-aos-delay="50"
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
         >{text}</Text>
