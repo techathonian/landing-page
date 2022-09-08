@@ -7,6 +7,7 @@ import Heroarc from '../../assets/herovector.svg'
 import Twitter from '../../assets/twitter.svg'
 import Ig from '../../assets/bxl_instagram-alt.svg'
 import LinkIn from '../../assets/akar-icons_linkedin-box-fill.svg'
+import { HashLink } from 'react-router-hash-link';
 
 
 const Container = styled.div`
@@ -219,7 +220,7 @@ const MentorsCardThree  = styled.div`
 // Card start
 const MentorsCardFour  = styled.div`
    
-    background-image: url(https://firebasestorage.googleapis.com/v0/b/tecthathonlandingpage.appspot.com/o/assets%2Fbg%2Fmentors%2FAbass.jpeg?alt=media&token=04f330af-9b71-41d9-8977-89c35b7aa1c3);
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/tecthathonlandingpage.appspot.com/o/assets%2Fbg%2Fmentors%2Fphoto1659900539-removebg-preview.png?alt=media&token=23561437-8987-4e5c-8b76-dce51da11642);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -267,6 +268,43 @@ const MentorsCardFive  = styled.div`
     border: 2px solid #986DF6;
     padding:16px;
     position:relative;
+    /* top:44px; */
+    overflow:hidden;   
+
+
+
+
+    &:hover{
+   
+    filter: sepia(40%);
+
+   .overview {
+        transform:translateY(0);
+        cursor:pointer;
+    }
+    
+   
+}
+
+@media only screen and (max-width:768px){
+    top:0px;
+}
+
+`;// Card start end ===============================
+// Card start
+const MentorsCardSix  = styled.div`
+   
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/tecthathonlandingpage.appspot.com/o/assets%2Fbg%2Fmentors%2Fkorede.jpeg?alt=media&token=439d1322-3ff8-4284-9b07-11af41e54078);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:329px;
+    height: 350px;
+    border-radius: 8px;
+    margin:16px auto 0;
+    border: 2px solid #986DF6;
+    padding:16px;
+    position:relative;
     top:44px;
     overflow:hidden;   
 
@@ -291,9 +329,83 @@ const MentorsCardFive  = styled.div`
 
 `;// Card start end
 // Card start
-const MentorsCardSix  = styled.div`
+const MentorsCardSeven  = styled.div`
    
-    background-image: url(https://firebasestorage.googleapis.com/v0/b/tecthathonlandingpage.appspot.com/o/assets%2Fbg%2Fmentors%2Fkorede.jpeg?alt=media&token=439d1322-3ff8-4284-9b07-11af41e54078);
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/tecthathonlandingpage.appspot.com/o/assets%2Fbg%2Fmentors%2FAhmad.jpeg?alt=media&token=bae0ae07-7c7d-4df5-8e10-86036a1d733a);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:329px;
+    height: 350px;
+    border-radius: 8px;
+    margin:16px auto 0;
+    border: 2px solid #986DF6;
+    padding:16px;
+    position:relative;
+    top:44px;
+    overflow:hidden;   
+
+
+
+
+    &:hover{
+   
+    filter: sepia(40%);
+
+   .overview {
+        transform:translateY(0);
+        cursor:pointer;
+    }
+    
+   
+}
+
+@media only screen and (max-width:768px){
+    top:0px;
+}
+
+`;// Card start end
+// Card start
+const MentorsCardEight  = styled.div`
+   
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/tecthathonlandingpage.appspot.com/o/assets%2Fbg%2Fmentors%2FOsacr.png?alt=media&token=d7fc18cf-a3d9-4d54-a601-5134c24d42df);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:329px;
+    height: 350px;
+    border-radius: 8px;
+    margin:16px auto 0;
+    border: 2px solid #986DF6;
+    padding:16px;
+    /* position:relative;
+    top:44px; */
+    overflow:hidden;   
+
+
+
+
+    &:hover{
+   
+    filter: sepia(40%);
+
+   .overview {
+        transform:translateY(0);
+        cursor:pointer;
+    }
+    
+   
+}
+
+@media only screen and (max-width:768px){
+    top:0px;
+}
+
+`;// Card start end
+// Card start
+const MentorsCardNine  = styled.div`
+   
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/tecthathonlandingpage.appspot.com/o/assets%2Fbg%2Fmentors%2FAce.png?alt=media&token=b6ef4c22-0343-4f30-95fd-28dfb137e6f1);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -450,7 +562,7 @@ export const About = () => {
             <HeroVectorArc  src={Heroarc} />
             <Aboutpara>Together we are building a community where anyone can transition into tech from zero to ground up.</Aboutpara>
             
-            <FlexContainerTop>
+            <FlexContainerTop >
                 <MentorsCardOne style={{marginTop:'44px',}} 
                 data-aos="fade-up"
                 data-aos-offset="200"
@@ -521,7 +633,7 @@ export const About = () => {
      
        </div>
        <MentorBox>
-            <FlexContainer>
+            <FlexContainer >
             
             <MentorsCardFour  style={{marginTop:'44px',}}
             data-aos="fade-up"
@@ -583,6 +695,66 @@ export const About = () => {
                    </div>
                   </StyledMentor>
                 </MentorsCardSix>
+                <MentorsCardSeven style={{marginTop:'44px',}}
+                data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+                
+                
+                >
+                <Heading> Designer </Heading>
+                  <StyledMentor className='overview'>
+                  <StyledMentorName >Ahmad O Muhammad</StyledMentorName>
+                   <StyledMentorProfession >Brand Identity Designer</StyledMentorProfession>
+                   <div style={{display:'flex', gap:'16px', alignItems:'center'}}>
+                   <a href='https://twitter.com/hardecorede'><img src={Twitter}  style={{ width:'32px'}}/></a>
+                   <a href='#'><img src={Ig}  style={{ width:'32px'}}/></a>
+                   <a href='https://www.linkedin.com/in/adekorede-aderibigbe/'><img src={LinkIn}  style={{ width:'28px'}}/></a>
+                   </div>
+                  </StyledMentor>
+                </MentorsCardSeven>
+                <MentorsCardEight style={{marginTop:'44px',}}
+                data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+                
+                
+                >
+                <Heading>Writter </Heading>
+                  <StyledMentor className='overview'>
+                  <StyledMentorName >Oscar Jite</StyledMentorName>
+                   <StyledMentorProfession >Technical Writer, Tech Writing Mentor</StyledMentorProfession>
+                   <div style={{display:'flex', gap:'16px', alignItems:'center'}}>
+                   <a href='https://twitter.com/hardecorede'><img src={Twitter}  style={{ width:'32px'}}/></a>
+                   <a href='#'><img src={Ig}  style={{ width:'32px'}}/></a>
+                   <a href='https://www.linkedin.com/in/adekorede-aderibigbe/'><img src={LinkIn}  style={{ width:'28px'}}/></a>
+                   </div>
+                  </StyledMentor>
+                </MentorsCardEight>
+                <MentorsCardNine style={{marginTop:'44px',}}
+                data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+                
+                
+                >
+                <Heading>Developer </Heading>
+                  <StyledMentor className='overview'>
+                  <StyledMentorName >Okolie Uche</StyledMentorName>
+                   <StyledMentorProfession >Front End Developer, HTML, CSS, JavaScript Mentor</StyledMentorProfession>
+                   <div style={{display:'flex', gap:'16px', alignItems:'center'}}>
+                   <a href='https://twitter.com/hardecorede'><img src={Twitter}  style={{ width:'32px'}}/></a>
+                   <a href='#'><img src={Ig}  style={{ width:'32px'}}/></a>
+                   <a href='https://www.linkedin.com/in/adekorede-aderibigbe/'><img src={LinkIn}  style={{ width:'28px'}}/></a>
+                   </div>
+                  </StyledMentor>
+                </MentorsCardNine>
                
             
             </FlexContainer>

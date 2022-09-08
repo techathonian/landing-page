@@ -253,10 +253,10 @@ export const NavBar = () => {
                     <UnorderdList>
                     <ListItem><Link to="/">Home</Link></ListItem>
                         {/* <ListItem><HashLink smooth to="#home">Home</HashLink></ListItem> */}
-                        <ListItem><HashLink smooth to="#components">Components</HashLink></ListItem>
-                        <ListItem><HashLink smooth to="#events">Events</HashLink></ListItem> 
+                        <ListItem><HashLink smooth to="/#components">Components</HashLink></ListItem>
+                        <ListItem><HashLink smooth to="/#events">Events</HashLink></ListItem> 
                         <ListItem><Link to="/about">About us</Link></ListItem>
-                        <ListItem><HashLink smooth to="#partners">Partners</HashLink></ListItem>
+                        <ListItem><HashLink smooth to="/#partners">Partners</HashLink></ListItem>
                     </UnorderdList>
                 </ListContainer > {/* List conatiner start */}
                

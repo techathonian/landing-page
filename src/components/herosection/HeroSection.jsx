@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import HeroImage from '../../assets/heroimagedesktop.png'
 import Heroarc from '../../assets/herovector.svg'
 import { Button } from './Button';
+import {JoinComBtn} from './JoinComBtn';
 // import arrow from '../../assets/arrow.svg';
 import bgpartern from '../../assets/bgpartern.svg'
 // import Bgpartern from '../../assets/bgpartern.svg'
@@ -200,6 +201,11 @@ width:45%;
        
 `;
 
+const AnchorLink = styled.a`
+  text-decoration: none;
+  
+
+`;
 
 // const Arrow = styled.img`
      
@@ -225,9 +231,12 @@ export const HeroSection = () => {
                 while engaging in a systematic approach to imbibe
                 you with the necessary knowledge and skills.
                 </HeroText>
-                    <Button BtnText={"Join the waitlist for Techathon 2.0"} 
+                    <AnchorLink href='https://forms.gle/NnPexB59VkgcNxts7' target='_blank' rel="noreferrer"><Button BtnText={"Join the waitlist for Techathon 2.0"} 
                     
-                    />
+                    /></AnchorLink>
+                   <AnchorLink href='https://t.me/mentorshipandopensource' target='_blank' rel="noreferrer"><JoinComBtn JoinTele={"Join our community on Telegram"} 
+                  
+                    /></AnchorLink> 
                     {/* <button style={{display:'block', padding:'10px 54px 10px 20px',borderRadius:'10px', backgroundColor:'#5C2CC7', margin:' 0 auto', border:'none' }}>Join the waitlist for Techathon 2.0 <Arrow src={arrow} /></button> */}
             </HeroContent>
             <HeroIllustration>
