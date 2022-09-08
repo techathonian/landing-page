@@ -90,7 +90,7 @@ const ListContainer = styled.div`
        
       
         &&#hidden{
-         
+         /* 
          position: absolute;
          right:100%; */
          right:0;
