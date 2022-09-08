@@ -90,7 +90,7 @@ const ListContainer = styled.div`
        
       
         &&#hidden{
-         /* background-color: red;
+         /* 
          position: absolute;
          right:100%; */
          right:0;
@@ -252,11 +252,11 @@ export const NavBar = () => {
                 </HambugerMenuClose>
                     <UnorderdList>
                     <ListItem><Link to="/">Home</Link></ListItem>
-                        {/* <ListItem><HashLink smooth to="#home">Home</HashLink></ListItem> */}
-                        <ListItem><HashLink smooth to="/#components">Components</HashLink></ListItem>
-                        <ListItem><HashLink smooth to="/#events">Events</HashLink></ListItem> 
-                        <ListItem><Link to="/about">About us</Link></ListItem>
-                        <ListItem><HashLink smooth to="/#partners">Partners</HashLink></ListItem>
+                        {/* Added the onclick to the list item to solve the close issue*/}
+                        <ListItem onClick={()=>setToggleNav(!toggleNav)}><HashLink smooth to="/#components">Components</HashLink></ListItem>
+                        <ListItem onClick={()=>setToggleNav(!toggleNav)}><HashLink smooth to="/#events">Events</HashLink></ListItem> 
+                        <ListItem onClick={()=>setToggleNav(!toggleNav)}><Link to="/about">About us</Link></ListItem>
+                        <ListItem onClick={()=>setToggleNav(!toggleNav)}><HashLink smooth to="/#partners">Partners</HashLink></ListItem>
                     </UnorderdList>
                 </ListContainer > {/* List conatiner start */}
                
