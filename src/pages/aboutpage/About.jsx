@@ -498,7 +498,7 @@ const StyledMentorProfession = styled.p`
 const JoinUs =styled.div`
 
 /* height: 312px; */
-padding:64px 0;
+padding:64px 20px;
 margin-top: 120px;
 
 background: #171C54;
