@@ -505,7 +505,7 @@ background: #171C54;
 
 
 @media only screen and (max-width:768px){
-    padding:32px 0;
+    padding:32px 20px;
 
 }
 `;
