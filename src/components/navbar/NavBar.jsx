@@ -137,7 +137,7 @@ const ListItem = styled.li`
     a{
         text-decoration: none;
       
-        padding: 14px 20px;
+        padding: 14px 10px; /* Controls the spacing for the links*/ 
         font-family: techathonFont;
         font-style: normal;
         font-weight: 400;
