@@ -7,6 +7,7 @@ import {JoinComBtn} from './JoinComBtn';
 // import arrow from '../../assets/arrow.svg';
 import bgpartern from '../../assets/bgpartern.svg'
 // import Bgpartern from '../../assets/bgpartern.svg'
+import { Link } from 'react-router-dom';
 
 
 const Container =styled.div`
@@ -231,9 +232,11 @@ export const HeroSection = () => {
                 while engaging in a systematic approach to imbibe
                 you with the necessary knowledge and skills.
                 </HeroText>
-                    <AnchorLink href='https://forms.gle/eZdFrDRZv5QxD9SL7' target='_blank' rel="noreferrer"><Button BtnText={"Register for Techathon 2.0"} 
+                <Link to="/register">
+                   <Button BtnText={"Register for Techathon 2.0"} 
                     
-                    /></AnchorLink>
+                    />
+                </Link>
                    {/* <AnchorLink href='https://t.me/mentorshipandopensource' target='_blank' rel="noreferrer"><JoinComBtn JoinTele={"Join our community on Telegram"} 
                   
                     /></AnchorLink>  */}

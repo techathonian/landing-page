@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import arrow from '../../assets/arrow.svg';
+import { Link } from 'react-router-dom';
 
 
 const Wrapper = styled.div`
@@ -61,9 +62,9 @@ border-radius: 0px;
 export const Button = ({BtnText}) => {
   return (
     <Wrapper>
-        <AnchorLink href='https://forms.gle/NnPexB59VkgcNxts7' target='_blank' rel='noreferrer'>
+        <Link to="/register">
         <ButtonElem><span>{BtnText}</span> <Arrow src={arrow} /></ButtonElem>
-        </AnchorLink>
+        </Link>
 
     
     </Wrapper>
