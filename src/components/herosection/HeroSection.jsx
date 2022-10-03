@@ -231,12 +231,12 @@ export const HeroSection = () => {
                 while engaging in a systematic approach to imbibe
                 you with the necessary knowledge and skills.
                 </HeroText>
-                    <AnchorLink href='https://forms.gle/NnPexB59VkgcNxts7' target='_blank' rel="noreferrer"><Button BtnText={"Join the waitlist for Techathon 2.0"} 
+                    <AnchorLink href='https://forms.gle/eZdFrDRZv5QxD9SL7' target='_blank' rel="noreferrer"><Button BtnText={"Register for Techathon 2.0"} 
                     
                     /></AnchorLink>
-                   <AnchorLink href='https://t.me/mentorshipandopensource' target='_blank' rel="noreferrer"><JoinComBtn JoinTele={"Join our community on Telegram"} 
+                   {/* <AnchorLink href='https://t.me/mentorshipandopensource' target='_blank' rel="noreferrer"><JoinComBtn JoinTele={"Join our community on Telegram"} 
                   
-                    /></AnchorLink> 
+                    /></AnchorLink>  */}
                     {/* <button style={{display:'block', padding:'10px 54px 10px 20px',borderRadius:'10px', backgroundColor:'#5C2CC7', margin:' 0 auto', border:'none' }}>Join the waitlist for Techathon 2.0 <Arrow src={arrow} /></button> */}
             </HeroContent>
             <HeroIllustration>

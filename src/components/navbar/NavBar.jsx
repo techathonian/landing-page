@@ -257,6 +257,7 @@ export const NavBar = () => {
                         <ListItem onClick={()=>setToggleNav(!toggleNav)}><HashLink smooth to="/#events">Events</HashLink></ListItem> 
                         <ListItem onClick={()=>setToggleNav(!toggleNav)}><Link to="/about">About us</Link></ListItem>
                         <ListItem onClick={()=>setToggleNav(!toggleNav)}><HashLink smooth to="/#partners">Partners</HashLink></ListItem>
+                        <ListItem onClick={()=>setToggleNav(!toggleNav)}><Link to="/register">Register</Link></ListItem>
                     </UnorderdList>
                 </ListContainer > {/* List conatiner start */}
                

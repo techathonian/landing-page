@@ -125,7 +125,7 @@ const renderNonCodingTrack = NonCodingTrack.map((noncoding, key)=>{
              data-aos-duration="1000"
              data-aos-easing="ease-in-out"
             >
-            Techathon 1.0 is currently on going with both coding and non-coding courses being offered We have over 2000+ students who registered for free. The  courses being offered includes; 
+            Techathon 2.0 registration is currently on going with both coding and non-coding courses. The  courses being offered includes.
             </Text>
           <FlexContainer>
           <OngoingEventCard 
