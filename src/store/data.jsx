@@ -39,7 +39,7 @@ export const AboutContent = [
 
 export const Logo = [
     {
-        officalLogo:'https://firebasestorage.googleapis.com/v0/b/tecthathonlandingpage.appspot.com/o/Logo%202.png?alt=media&token=f442de33-6d8c-42a5-bf4d-d892fcc69154'
+        officalLogo:'https://firebasestorage.googleapis.com/v0/b/tecthathonlandingpage.appspot.com/o/assets%2Fbg%2FPrimary%20inverted.png?alt=media&token=bfa29b4c-0f2e-4bc5-95d9-30e758722c9a'
     }
 ]
 

@@ -287,7 +287,7 @@ export const Footer = () => {
     const renderLogo = Logo.map((logo, key)=>{
         return(
             <div logo={logo} key={key} >
-              <Link to='/'> <img src={logo.officalLogo} alt="" style={{width:'197px', height:'48px'}} /></Link>
+              <Link to='/'> <img src={logo.officalLogo} alt="" style={{width:'170px' }} /></Link>
                  
             </div>
         )
