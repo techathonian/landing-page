@@ -61,6 +61,8 @@ const Image = styled.img`
  
 `;
 const LogoContainer = styled.div`
+
+
 /*         
         margin-top:15px; this is just a hack
         width:197px;
@@ -70,6 +72,8 @@ const LogoContainer = styled.div`
         margin-top:15px; /*this is just a hack*/
         width:120px;
         height: 48px;
+       
+      
         }
    
 `;
@@ -114,7 +118,7 @@ const ListItem = styled.li`
     a{
         text-decoration: none;
       
-        padding: 14px 40px;
+        padding: 14px 22px;
         font-family: techathonFont;
         font-style: normal;
         font-weight: 400;
@@ -137,7 +141,7 @@ const ListItem = styled.li`
     a{
         text-decoration: none;
       
-        padding: 14px 20px;
+        padding: 14px 10px; /* Controls the spacing for the links*/ 
         font-family: techathonFont;
         font-style: normal;
         font-weight: 400;
@@ -146,6 +150,7 @@ const ListItem = styled.li`
      
     }
 }
+
 
     @media only screen and (max-width:768px){
         display:flex;
@@ -242,7 +247,8 @@ export const NavBar = () => {
             <NavContainer>
                 <Link to="/">
                 <LogoContainer>
-                    <img src={officalLogo}/>
+                    
+                    <img src={officalLogo} width="170px"/>
                 </LogoContainer>
                 </Link>
               
@@ -251,12 +257,13 @@ export const NavBar = () => {
                 < MenuIcon src={menuiconClose} />
                 </HambugerMenuClose>
                     <UnorderdList>
-                    <ListItem><Link to="/">Home</Link></ListItem>
+                    <ListItem onClick={()=>setToggleNav(!toggleNav)}><Link to="/">Home</Link></ListItem>
                         {/* Added the onclick to the list item to solve the close issue*/}
                         <ListItem onClick={()=>setToggleNav(!toggleNav)}><HashLink smooth to="/#components">Components</HashLink></ListItem>
                         <ListItem onClick={()=>setToggleNav(!toggleNav)}><HashLink smooth to="/#events">Events</HashLink></ListItem> 
                         <ListItem onClick={()=>setToggleNav(!toggleNav)}><Link to="/about">About us</Link></ListItem>
                         <ListItem onClick={()=>setToggleNav(!toggleNav)}><HashLink smooth to="/#partners">Partners</HashLink></ListItem>
+                        <ListItem onClick={()=>setToggleNav(!toggleNav)}><Link to="/register">Register</Link></ListItem>
                     </UnorderdList>
                 </ListContainer > {/* List conatiner start */}
                

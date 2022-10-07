@@ -15,7 +15,7 @@ export const EventSection = () => {
     <Container>
         <OngoingEvents />
          <FutureEvents />
-        <Button BtnText={"Join the waitlist for Techathon 2.0"} />
+        <Button BtnText={"Register for Techathon 2.0"} />
     </Container>
   )
 }

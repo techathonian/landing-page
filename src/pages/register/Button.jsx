@@ -1,45 +1,45 @@
 import React from 'react';
 import styled from 'styled-components';
 import arrow from '../../assets/arrow.svg';
-import { Link } from 'react-router-dom';
 
-
-const Wrapper = styled.div`
-  margin: 0 20px;
-`;
 const ButtonContainer = styled.div`
-/* width: 343px; */
-background-color: red;
 
-
-@media only screen and (min-width:1440px){
-  margin-top: 24px;
-  width:380px;
-
-}
+/* margin: 30px auto 30px;
+width:380px; */
 
 `;
+
 const AnchorLink = styled.a`
   text-decoration: none;
 
 `;
 const ButtonElem = styled.button`
-display: block;
-margin: auto;
-padding: 10px 30px;
-gap: 16px;
-border:none;
-margin-top:24px ;
-/* width: 343px; */
-/* height: 55px; */
+
+padding: 10px 30px 10px 30px;
+/* width: 247px; */
+display:block;
 background: #5C2CC7;
 border-radius: 10px;
+border:none;
+margin:16px auto 0 ;
+
+
+span{
 font-family: techathonFont;
 font-style: normal;
 font-weight: 600;
-color: #FFFFFF;
 font-size: 14px;
 line-height: 35px;
+color: #FFFFFF;
+
+@media only screen and (max-width:768px){
+  font-family: techathonFont;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+}
+}
 
 &:hover span{
     color:#fff;
@@ -50,23 +50,33 @@ line-height: 35px;
 
 `;
 const Arrow = styled.img`
-     
+
 height: 10.5018949508667px;
 width: 12.00133991241455px;
 margin-left: 10px;
 top: 6.7490234375px;
 border-radius: 0px;
 
+
+/* tlp/sys/color/system-white */
+
+
+     
+/* height: 10.5018949508667px;
+width: 12.00133991241455px;
+left: 6px;
+top: 6.7490234375px;
+border-radius: 0px; */
+
 `;
 
 export const Button = ({BtnText}) => {
   return (
-    <Wrapper>
-        <Link to="/register">
+    <ButtonContainer>
+      <AnchorLink href='https://forms.gle/eZdFrDRZv5QxD9SL7' target='_blank' rel='noreferrer'>
         <ButtonElem><span>{BtnText}</span> <Arrow src={arrow} /></ButtonElem>
-        </Link>
+        </AnchorLink>
 
-    
-    </Wrapper>
+    </ButtonContainer>
   )
 }
