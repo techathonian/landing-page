@@ -93,13 +93,14 @@ export const Register = () => {
     <GridContainer>
     
         <VideoItem>
+        <h2>Registration for cohort 2.0 is officially closed.</h2>
         <iframe width="100%" max-width="100%" height="315" src="https://www.youtube.com/embed/qNKtfpcFRa4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <h2>Watch the track explainer video to understand what each track is before getting started.</h2>
      
         </VideoItem>
         <GetStarted>
         
-        <Button BtnText={'Get Started'} />
+        {/* <Button BtnText={'Get Started'} /> */}
       
        
           
