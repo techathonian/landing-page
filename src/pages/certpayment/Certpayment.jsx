@@ -33,7 +33,9 @@ const Container = styled.div`
   place-self: center;
 
  
-    
+    p a{
+    text-decoration:none;
+    }
    
    
 
@@ -59,6 +61,7 @@ export const Certpayment = () => {
             <p><span style={{fontWeight:'bold'}}>Account Name:</span> Techathon ICT Program</p>
             <p><span style={{fontWeight:'bold'}}>Account Number:</span> 1697912414</p>
             <p><span style={{fontWeight:'bold'}}>Bank Name:</span> Access Bank</p>
+              <p><span style={{fontWeight:'bold'}}>Out side Nigeria:</span><a href="https://paystack.com/pay/techathon-cert-payment" target="_blank">Pay Here</a></p>
 
             </Container>
 
