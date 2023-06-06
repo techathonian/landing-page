@@ -62,9 +62,9 @@ border-radius: 0px;
 export const Button = ({BtnText}) => {
   return (
     <Wrapper>
-        <Link to="/register">
+        <a href="https://lms.techathonian.com" target="_blank" style={{ textDecoration: 'none'}}>
         <ButtonElem><span>{BtnText}</span> <Arrow src={arrow} /></ButtonElem>
-        </Link>
+        </a>
 
     
     </Wrapper>
