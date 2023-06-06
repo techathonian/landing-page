@@ -232,11 +232,11 @@ export const HeroSection = () => {
                 while engaging in a systematic approach to imbibe
                 you with the necessary knowledge and skills.
                 </HeroText>
-                <Link to="/register">
+                <a href="https://lms.techathonian.com/" target="_blank" styles={{textDecoration: 'none',}} >
                    <Button BtnText={"Register for Techathon 3.0"} 
                     
                     />
-                </Link>
+                </a>
                    {/* <AnchorLink href='https://t.me/mentorshipandopensource' target='_blank' rel="noreferrer"><JoinComBtn JoinTele={"Join our community on Telegram"} 
                   
                     /></AnchorLink>  */}
