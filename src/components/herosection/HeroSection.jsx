@@ -233,7 +233,7 @@ export const HeroSection = () => {
                 you with the necessary knowledge and skills.
                 </HeroText>
                 <Link to="/register">
-                   <Button BtnText={"Register for Techathon 2.0"} 
+                   <Button BtnText={"Register for Techathon 3.0"} 
                     
                     />
                 </Link>
