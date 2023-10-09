@@ -233,7 +233,7 @@ export const HeroSection = () => {
                 you with the necessary knowledge and skills.
                 </HeroText>
                 <a href="https://lms.techathonian.com/" target="_blank" styles={{textDecoration: 'none',}} >
-                   <Button BtnText={"Register for Techathon 3.0"} 
+                   <Button BtnText={"Register for Techathon Mentorship"} 
                     
                     />
                 </a>
