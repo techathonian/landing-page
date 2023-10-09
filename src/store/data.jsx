@@ -8,7 +8,7 @@ export const NonCodingTrackIcon = ['https://firebasestorage.googleapis.com/v0/b/
 export const Events = [
     {
         eventTitle: 'Future events',
-        text:'Techathon 3.0 is expected to kickstart in the nearest future with lots of opportunities for you to explore, network and learn.'
+        text:'Techathon 4.0 is expected to kickstart in the nearest future with lots of opportunities for you to explore, network and learn.'
 
     }, 
     {
