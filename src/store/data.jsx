@@ -2,13 +2,13 @@ import React from 'react';
 
 export const CodingTrack = ['Front End Web Development (HTML, CSS, JavaScript)','Front End Web Development (React Js)', 'Back End Web Development (Node Js)', 'Python + Django',];
 export const CodingTrackIcon = ['https://firebasestorage.googleapis.com/v0/b/tecthathonlandingpage.appspot.com/o/Code.png?alt=media&token=7be6b355-6c20-4e89-b311-c001cae5efa4'];
-export const NonCodingTrack = ['Graphics Design','Brand Design', 'UI/UX', 'Data Analytics',   'Product Management', 'Digital Marketing and Content Creation'];
+export const NonCodingTrack = [ 'UI/UX', 'Data Analytics',   'Product Management', ];
 export const NonCodingTrackIcon = ['https://firebasestorage.googleapis.com/v0/b/tecthathonlandingpage.appspot.com/o/PenNib.png?alt=media&token=7f4459aa-9adf-41ce-8689-4c8d1f51f41a'];
 
 export const Events = [
     {
         eventTitle: 'Future events',
-        text:'Techathon 4.0 is expected to kickstart in the nearest future with lots of opportunities for you to explore, network and learn.'
+        text:'Techathon 5.0 is expected to kickstart in the nearest future with lots of opportunities for you to explore, network and learn.'
 
     }, 
     {
